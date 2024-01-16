@@ -1,0 +1,169 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    height: 100vh;
+    width: 100vw;
+}
+.clock-main-container{
+    width: 50%;
+    height: 50%;
+    box-shadow: 0px 0px 2px 2px rgba(3, 228, 146, 0.6);
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around ;
+    align-items: center
+}
+
+.clock{
+    width: 52%;
+    height: 52%;
+    border-radius: 50%;
+    background-color: #043d63;
+    border:5px solid rgb(51, 50, 50);
+    position: relative;
+}
+@media screen and (min-width:800px){
+    .clock{
+        height: 100%;
+        width: 40%;
+    }
+    .clock-main-container{
+        width: 80%;
+        height: 80%;
+    }
+}
+.needle{
+   border: 1px solid black;
+    height: 1px;
+    width: 45%;
+    top: 50%;
+    left: 5%;
+    position: absolute;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05;
+    transition-timing-function: ease-in;
+}
+.hours{
+    background-color: rgb(247, 4, 4);
+    width: 30%;
+    left: 20%;
+}
+.seconds{
+   transform: rotate(0deg);
+    background-color: rgb(157, 255, 0);
+}
+.minutes{
+    
+    background-color: rgba(7, 7, 8, 0.905);
+}
+p {
+    position: absolute;   
+    font-family: "roboto";
+    font-size: 100%;
+    color: white;
+}
+.first{
+    left: 69%;
+}
+.second{
+    top: 12%;
+    left: 85%;
+}
+.third{
+    top: 37%;
+    left: 92%;
+}
+.fourth{
+    top: 62%;
+    left: 87%;
+}
+.fifth{
+    top: 77%;
+    left: 69%;
+}
+.six{
+    top: 80%;
+    left: 48%;
+}
+.seven{
+    top: 80%;
+    left: 27%; 
+}
+.eight{
+    top: 62%;
+    left: 10%; 
+}
+.nine{
+    top: 37%;
+    left: 5%; 
+}
+.ten{
+    top: 12%;
+    left: 8%; 
+}
+.eleven{
+    top: -2%;
+    left: 26%;
+}
+.twelve{
+    top: -6%;
+    left: 46%;
+}
+@media screen and (min-width:800px){
+    .clock{
+        height:250px;
+        width: 250px;
+        border-radius: 50%;
+    }
+    .clock-main-container{
+        width: 80%;
+        height: 80%;
+    }
+    .first{
+        top: 2%;
+        left: 72%;
+    }
+
+    .second{
+        top: 20%;
+        left: 85%;
+    }
+
+    .third{
+        top: 40%;
+        left: 92%;
+    }
+
+    .fifth{
+        top: 78%;
+        left: 69%;
+    }
+    .six{
+        top: 85%;
+        left: 48%;
+    }
+    .seven{
+        top: 80%;
+        left: 23%; 
+    }
+    .eight{
+        top: 62%;
+        left: 10%; 
+    }
+    .nine{
+        top: 40%;
+        left: 5%; 
+    }
+    .ten{
+        top: 18%;
+        left: 10%; 
+    }
+    .eleven{
+        top: 2%;
+        left: 23%;
+    }
+}
